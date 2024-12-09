@@ -27,4 +27,17 @@ void nullSafetyTest(){
 
   print(value1); // null 값이여서 할당됨
   print(value2); // not null
+
+  // is, is! - 타입 확인
+  int x = 10;
+  if(x is int){ // instance of 랑 비슷
+    print("x는 정수형입니다."); // x는 정수형입니다.
+  }
+
+  // 스프레드 연산자
+  var numbers = [1, 2, 3];
+  var moreNumbers = [...numbers, if(numbers.length < 5) 4]; // 배열 안에서 조건문도 사용가능
+  print(moreNumbers); // [1, 2, 3, 4]
+
+
 }
