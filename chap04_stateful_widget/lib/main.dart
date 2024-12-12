@@ -4,7 +4,7 @@ import 'package:chap04_stateful_widget/stateful/03_question.dart';
 import 'package:chap04_stateful_widget/stateful/03_question1.dart';
 import 'package:flutter/material.dart';
 
-void main(){
+void main() {
   runApp(const MyApp());
 }
 
@@ -28,14 +28,12 @@ class MyPage extends StatelessWidget {
       appBar: AppBar(
         title: Center(child: Text("Stateful Widget")),
       ),
+      body: //ListViewWrap(),
 
-      body: ListViewWrap(),
-
-      // floatingActionButton:
-      //   // 문제점 확인
-      //   // StatelessTest(),
-      //   StatefulTest(),
+          // floatingActionButton:
+          //   // 문제점 확인
+          //   // StatelessTest(),
+          StatefulTest(),
     );
   }
 }
-

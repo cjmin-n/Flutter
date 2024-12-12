@@ -12,8 +12,10 @@ import 'package:flutter/material.dart';
 
 import 'dialog/01_dialog_test.dart';
 import 'dialog/02_alert_dialog.dart';
+import 'dialog/03_text_dialog.dart';
+import 'dialog/04_state_dialog.dart';
 
-void main(){
+void main() {
   runApp(const MyApp());
 }
 
@@ -39,13 +41,11 @@ class MyDialog extends StatelessWidget {
           child: Text("Dialog 테스트"),
         ),
       ),
-
-      body: //DialogTest(),
-        //DialogTest2(),
-        DialogTest3(),
+      body: // DialogTest(),
+          // DialogTest2(),
+          // DialogTest3(),
+          // DialogTest4(),
+          DialogTest5(),
     );
   }
 }
-
-
-
