@@ -89,20 +89,20 @@ class _ToDoListState extends State<ToDoList> {
                     TextButton(
                         onPressed: () {
                           setState(() {
-                            num++;
-                            subjects.add(inputText.text.isNotEmpty
-                                ? inputText.text
-                                : "");
-                            contents.add(inputText2.text.isNotEmpty
-                                ? inputText2.text
-                                : "");
+                            if (inputText.text.isNotEmpty &&
+                                inputText.text.isNotEmpty) {
+                              num++;
+                              subjects.add(inputText.text);
+                              contents.add(inputText2.text);
+
+                              Navigator.pop(context);
+                            }
 
                             // inputText2.text = "";
                             // inputText.text = "";
                             inputText.clear();
                             inputText2.clear();
                           });
-                          Navigator.pop(context);
                         },
                         child: Text("완료")),
                   ],
