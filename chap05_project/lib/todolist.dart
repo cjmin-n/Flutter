@@ -79,8 +79,10 @@ class _ToDoListState extends State<ToDoList> {
                   actions: [
                     TextButton(
                         onPressed: () {
-                          inputText2.text = "";
-                          inputText.text = "";
+                          // inputText2.text = "";
+                          // inputText.text = "";
+                          inputText.clear();
+                          inputText2.clear();
                           Navigator.pop(context);
                         },
                         child: Text("취소")),
@@ -95,8 +97,10 @@ class _ToDoListState extends State<ToDoList> {
                                 ? inputText2.text
                                 : "");
 
-                            inputText2.text = "";
-                            inputText.text = "";
+                            // inputText2.text = "";
+                            // inputText.text = "";
+                            inputText.clear();
+                            inputText2.clear();
                           });
                           Navigator.pop(context);
                         },
